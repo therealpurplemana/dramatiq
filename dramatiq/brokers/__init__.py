@@ -14,3 +14,23 @@
 #
 # You should have received a copy of the GNU Lesser General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# These imports are provided for backward compatibility.
+# New code should import directly from the module.
+
+try:
+    from .rabbitmq import RabbitmqBroker
+except ImportError:  # pragma: no cover
+    pass
+
+try:
+    from .redis import RedisBroker
+except ImportError:  # pragma: no cover
+    pass
+
+try:
+    from .supabase import SupabaseBroker
+except ImportError:  # pragma: no cover
+    pass
+
+from .stub import StubBroker

@@ -62,6 +62,9 @@ Brokers
 .. autoclass:: dramatiq.brokers.redis.RedisBroker
    :members:
    :inherited-members:
+.. autoclass:: dramatiq.brokers.supabase.SupabaseBroker
+   :members:
+   :inherited-members:
 .. autoclass:: dramatiq.brokers.stub.StubBroker
    :members:
    :inherited-members:
