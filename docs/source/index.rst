@@ -59,6 +59,10 @@ Or if you want to use it with Redis_::
 
    $ pip install -U 'dramatiq[redis, watch]'
 
+Or if you want to use it with Supabase Queue::
+
+   $ pip install -U 'dramatiq[watch] psycopg'
+
 Read the :doc:`motivation` behind it or the :doc:`guide` if you're
 ready to get started.
 
@@ -79,6 +83,7 @@ how to use Dramatiq.
    troubleshooting
    advanced
    cookbook
+   supabase
 
 
 API Reference
